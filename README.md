@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Creating shopping cart with React and strapi as the backend API
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
