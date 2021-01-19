@@ -8,7 +8,7 @@ import ChakraAlert from "../components/ChakraAlert";
 
 export default function Home() {
   const { products, isLoading, isError } = fetchProds();
-  console.log(isLoading);
+
   return (
     <div>
       <Layout>
