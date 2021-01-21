@@ -1,7 +1,8 @@
 import axios from "axios";
 import useSWR from "swr";
 
-const API_URL = "https://young-shore-93917.herokuapp.com/products";
+const API_URL =
+  "https://us-central1-product-api-407db.cloudfunctions.net/api/products";
 
 const fetcher = (url) => axios.get(url).then((res) => res.data);
 

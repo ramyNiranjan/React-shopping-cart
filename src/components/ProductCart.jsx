@@ -2,21 +2,12 @@ import { Box, Text, Image, Button, Flex, Tag } from "@chakra-ui/react";
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 
-export default function ProductCard({
-  id,
-  price,
-  title,
-  img: {
-    formats: {
-      medium: { url },
-    },
-  },
-}) {
-  const cartProd = { title, price, url, id };
+export default function ProductCard({ id, price, title, image_url }) {
+  const cartProd = { title, price, image_url, id };
   const { addProduct, cartItems, increase, isInCart } = useContext(CartContext);
   return (
     <Box pos="relative" bg="gray.50">
-      <Image w="100%" h="80%" objectFit="cover" src={url} alt="image" />
+      <Image w="100%" h="80%" objectFit="cover" src={image_url} alt="image" />
       <Flex
         px="2"
         w="100%"
