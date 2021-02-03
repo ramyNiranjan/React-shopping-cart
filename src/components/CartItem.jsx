@@ -9,7 +9,12 @@ export default function CartItem({ ...prod }) {
   return (
     <Box>
       <Flex w="150px" bg="gray.100" w="100%" justify="space-between" mb="2">
-        <Image boxSize="100px" src={prod.url} objectFit="cover" />
+        <Image
+          boxSize="100px"
+          src={prod.url}
+          objectFit="cover"
+          fallbackSrc="https://via.placeholder.com/150"
+        />
         <Flex direction="column" ml="2" justify="space-evenly" flex="1">
           <Text fontSize="md">{prod.title}</Text>
           <Flex>

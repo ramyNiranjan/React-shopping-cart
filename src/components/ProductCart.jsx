@@ -7,7 +7,14 @@ export default function ProductCard({ id, price, title, image_url }) {
   const { addProduct, cartItems, increase, isInCart } = useContext(CartContext);
   return (
     <Box pos="relative" bg="gray.50">
-      <Image w="100%" h="80%" objectFit="cover" src={image_url} alt="image" />
+      <Image
+        w="100%"
+        h="80%"
+        objectFit="cover"
+        src={image_url}
+        alt="image"
+        fallbackSrc="https://via.placeholder.com/150"
+      />
       <Flex
         px="2"
         w="100%"
